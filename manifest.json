@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "JD Skill Matcher",
+  "version": "1.0.0",
+  "description": "Scans LinkedIn job descriptions and counts mentions of a hardcoded skill list to help decide whether to apply.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://www.linkedin.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/jobs/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

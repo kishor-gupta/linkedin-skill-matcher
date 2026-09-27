@@ -1,0 +1,127 @@
+#jd-skill-matcher {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 2147483646;
+  width: 320px;
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: rgba(22, 22, 24, 0.88);
+  color: #f3f4f6;
+  font: 16px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  pointer-events: auto;
+}
+
+#jd-skill-matcher .jsm-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#jd-skill-matcher .jsm-title {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+}
+
+#jd-skill-matcher .jsm-score {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #c4c9d4;
+}
+
+#jd-skill-matcher .jsm-flags-summary {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #7dd3fc;
+}
+
+#jd-skill-matcher .jsm-toggle {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #f3f4f6;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#jd-skill-matcher .jsm-toggle:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+#jd-skill-matcher .jsm-list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+}
+
+#jd-skill-matcher .jsm-section-label {
+  margin: 16px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+#jd-skill-matcher .jsm-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+}
+
+#jd-skill-matcher .jsm-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#jd-skill-matcher .jsm-badge {
+  flex: 0 0 auto;
+  min-width: 28px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#jd-skill-matcher .jsm-badge--hit {
+  background: #1f9d55;
+  color: #fff;
+}
+
+#jd-skill-matcher .jsm-badge--miss {
+  background: #5c6370;
+  color: #e5e7eb;
+}
+
+#jd-skill-matcher .jsm-badge--flag {
+  background: #0284c7;
+  color: #fff;
+}
+
+#jd-skill-matcher.jsm-collapsed {
+  width: auto;
+  min-width: 240px;
+}
+
+#jd-skill-matcher.jsm-collapsed .jsm-body {
+  display: none;
+}
